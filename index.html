@@ -5,26 +5,18 @@
 </head>
 <body>
     <script>
+        // declare the variable
         function getRandomInt(max) {
             return Math.floor(Math.random() * max);
         }
+        let targetUrlList = ["https://www.surveycake.com/s/pMean", "https://www.surveycake.com/s/ablL4"];
 
-        let targetUrlList = [
-            "https://www.surveycake.com/s/1Zo6x", 
-            "https://www.surveycake.com/s/pMean", 
-            "https://www.surveycake.com/s/ablL4", 
+        let ans = getRandomInt(100);
 
-        ];
-
-        let ans = getRandomInt(3);
-
-        if(ans === 0){ 
-            location.href = "https://www.surveycake.com/s/1Zo6x";
-        } 
-        else if(ans === 1){ 
+        if(ans < 50){
             location.href = "https://www.surveycake.com/s/pMean";
-        }
-        else { 
+        } 
+        else {
             location.href = "https://www.surveycake.com/s/ablL4";
         }
     </script>
